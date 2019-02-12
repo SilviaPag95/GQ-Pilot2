@@ -84,7 +84,8 @@ button {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
+  border-bottom: 1px solid black;
+  max-width: 900px;
 }
 .tooltip .tooltiptext {
   visibility: hidden;
@@ -96,7 +97,7 @@ button {
   padding: 5px 0;
 
   /* Position the tooltip */
-  position: absolute;
+  position: relative;
   z-index: 1;
 }
 
