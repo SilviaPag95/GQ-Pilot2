@@ -115,6 +115,10 @@ button {
     transition: height ease 0.3s
 }
 
+.toggle__trigger {
+    padding: 12px;
+}
+
 .example {
     max-width: 900px;
 }
