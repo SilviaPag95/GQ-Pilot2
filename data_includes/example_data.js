@@ -38,7 +38,7 @@ var items = [
       html: {include: "TrainingItem1.html"},
     } ],
 
-    ["training2", "Form", {
+    ["training2", "Training", {
       html: {include: "TrainingItem2.html"},
     } ],
                 
