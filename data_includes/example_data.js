@@ -17,6 +17,9 @@ var defaults = [
         continueOnReturn: false,
         saveReactionTime: false
     },
+    "Training", {
+        hideProgressBar: true,
+    }
 ];
 
 var items = [
