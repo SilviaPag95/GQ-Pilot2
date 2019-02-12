@@ -1,0 +1,178 @@
+    <script>
+        $(document).ready(function() {
+            var safe = false;
+            var count = 0;
+
+            while(!safe && count < 5) {
+              var desiredOutput = {
+                bs: 9,
+                rs: 0,
+                bc: 0,
+                rc: 0,
+              }
+              var trial = desiredOutput;
+              var objects = generate(trial);
+              if(objects.length === 9) {
+                safe = true;
+              }
+              count++;
+            }
+
+            for(var j = 0; j < objects.length; j++) {
+                $(".main").append("<div class='shape " + objects[j].currentshape + "' style='left: " + objects[j].left + "px; top: " + objects[j].top +"px; background-color: rgb(" + objects[j].red + "," + objects[j].green + "," + objects[j].blue + ")'></div>");
+              }
+            });
+
+            function generate(trial) {
+              var shape = ["circle", "square"];
+              var objects = [];
+              var object = {};
+              var counter = 0;
+
+              while(objects.length < 9 && counter < 10000) {
+                var left = Math.random() * ($('.main').width() - 40);
+                var top = Math.random() * ($('.main').height() - 40);
+                var overlapping = false;
+
+                for(var i = 0; i < objects.length; i++) {
+                  var existing = objects[i];
+                  var x = Math.round(Math.abs(left - existing.left));
+                  var y = Math.round(Math.abs(top - existing.top));
+                  if (x < 40 || y < 40) {
+                    // They are overlapping
+                    overlapping = true;
+                    // do not add to array
+                    break;
+                  }
+
+                }
+                // add valid circles to array
+                if (!overlapping) {
+                  if(trial.bs != 0 || trial.rs != 0) {
+                    var currentshape = "square";
+                    if(trial.bs != 0) {
+                      var red = 40;
+                      var blue = 200;
+                      var green = 96;
+                      trial.bs--;
+                    }
+                    else{
+                      var red = 230;
+                      var blue = 44;
+                      var green = 48;
+                      trial.rs--;
+                    }
+                  }
+                  else {
+                    var currentshape = "circle";
+                    if(trial.bc != 0) {
+                      var red = 40;
+                      var blue = 200;
+                      var green = 96;
+                      trial.bc--;
+                    }
+                    else {
+                      var red = 230;
+                      var blue = 44;
+                      var green = 48;
+                      trial.rc--;
+                    }
+                  }
+
+                  object = {
+                    left: left,
+                    top: top,
+                    currentshape: currentshape,
+                    red: red,
+                    blue: blue,
+                    green: green,
+                  }
+
+
+                  objects.push(object);
+                }
+                  counter++;
+                }
+              return objects;
+            }
+            
+        function toggler() {
+            const classNames = {
+              main: "toggle",
+              trigger: "toggle__trigger",
+              target: "toggle__target",
+              visibleTarget: "toggle__target--shown",
+              hiddenTarget: "toggle__target--hidden",
+              visibleTrigger: "toggle__trigger--active",
+              hiddenTrigger: "toggle__trigger--not-active"
+            }
+
+            const toggleGroups = document.querySelectorAll(`.${classNames.main}`)
+
+            toggleGroups.forEach(group => {
+              const trigger = group.querySelector(`.${classNames.trigger}`)
+              const target = group.querySelector(`.${classNames.target}`)
+
+             const textResources = getTextResources(trigger)
+
+              if (!target || !trigger) {
+                return;
+              }
+
+              const initialHeight = target.clientHeight + "px";
+
+              hideTarget(target, trigger, textResources);
+
+              trigger.addEventListener("click", () => {
+                toggleVisibility(target, trigger, initialHeight, textResources);
+              })
+            })
+
+            function getTextResources(trigger) {
+              const activeText = trigger.getAttribute('data-textActive')
+              const notActiveText = trigger.getAttribute('data-textNotActive')
+              const textResources = { activeText, notActiveText }
+              return textResources
+            }
+
+            function showTarget(target,trigger, initialHeight, textResources) {
+              target.style.height = initialHeight;
+              target.classList.add(classNames.visibleTarget)
+              target.classList.remove(classNames.hiddenTarget)
+
+              trigger.classList.add(classNames.visibleTrigger)
+              trigger.classList.remove(classNames.hiddenTrigger)
+
+              if(textResources.activeText != null && textResources.notActiveText != null) {
+                trigger.innerText = textResources.notActiveText
+              }
+
+            }
+
+            function hideTarget(target, trigger, textResources) {
+              target.style.height = "0px"
+              target.classList.remove(classNames.visibleTarget)
+              target.classList.add(classNames.hiddenTarget)
+
+              trigger.classList.remove(classNames.visibleTrigger)
+              trigger.classList.add(classNames.hiddenTrigger)
+
+              if(textResources.activeText != null && textResources.notActiveText != null) {
+                trigger.innerText = textResources.activeText
+              }
+
+            }
+
+            const toggleVisibility = (target,trigger, initialHeight, textResources) => {
+              if (!target.classList.contains(classNames.visibleTarget)) {
+                showTarget(target, trigger, initialHeight, textResources)
+              } else {
+                hideTarget(target, trigger, textResources)
+              }
+            }
+          }
+          toggler()
+    </script>
+
+    <div class="main"></div>
+    <p>You may describe this situation as: <i>All objects are blue squares.</i></p>
