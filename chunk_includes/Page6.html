@@ -1,29 +1,3 @@
-    <style>
-        .main {
-          width: 900px;
-          height: 500px;
-          border-radius: 7px;
-          border: 1px solid #ababab;
-          position: relative;
-          margin-bottom: 30px;
-        }
-
-        .shape {
-          position: absolute;
-          width: 40px;
-          height: 40px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px 0px;
-        }
-
-        .circle {
-            border-radius: 100%;
-        }
-
-        .square {
-            display: block;
-        }
-    </style>
-
     <script>
         $(document).ready(function() {
             var safe = false;
@@ -121,27 +95,101 @@
                 }
               return objects;
             }
+    function toggler() {
+            const classNames = {
+              main: "toggle",
+              trigger: "toggle__trigger",
+              target: "toggle__target",
+              visibleTarget: "toggle__target--shown",
+              hiddenTarget: "toggle__target--hidden",
+              visibleTrigger: "toggle__trigger--active",
+              hiddenTrigger: "toggle__trigger--not-active"
+            }
+
+            const toggleGroups = document.querySelectorAll(`.${classNames.main}`)
+
+            toggleGroups.forEach(group => {
+              const trigger = group.querySelector(`.${classNames.trigger}`)
+              const target = group.querySelector(`.${classNames.target}`)
+
+             const textResources = getTextResources(trigger)
+
+              if (!target || !trigger) {
+                return;
+              }
+
+              const initialHeight = target.clientHeight + "px";
+
+              hideTarget(target, trigger, textResources);
+
+              trigger.addEventListener("click", () => {
+                toggleVisibility(target, trigger, initialHeight, textResources);
+              })
+            })
+
+            function getTextResources(trigger) {
+              const activeText = trigger.getAttribute('data-textActive')
+              const notActiveText = trigger.getAttribute('data-textNotActive')
+              const textResources = { activeText, notActiveText }
+              return textResources
+            }
+
+            function showTarget(target,trigger, initialHeight, textResources) {
+              target.style.height = initialHeight;
+              target.classList.add(classNames.visibleTarget)
+              target.classList.remove(classNames.hiddenTarget)
+
+              trigger.classList.add(classNames.visibleTrigger)
+              trigger.classList.remove(classNames.hiddenTrigger)
+
+              if(textResources.activeText != null && textResources.notActiveText != null) {
+                trigger.innerText = textResources.notActiveText
+              }
+
+            }
+
+            function hideTarget(target, trigger, textResources) {
+              target.style.height = "0px"
+              target.classList.remove(classNames.visibleTarget)
+              target.classList.add(classNames.hiddenTarget)
+
+              trigger.classList.remove(classNames.visibleTrigger)
+              trigger.classList.add(classNames.hiddenTrigger)
+
+              if(textResources.activeText != null && textResources.notActiveText != null) {
+                trigger.innerText = textResources.activeText
+              }
+
+            }
+
+            const toggleVisibility = (target,trigger, initialHeight, textResources) => {
+              if (!target.classList.contains(classNames.visibleTarget)) {
+                showTarget(target, trigger, initialHeight, textResources)
+              } else {
+                hideTarget(target, trigger, textResources)
+              }
+            }
+          }
+          toggler()
     </script>
 
     <div class="main"></div>
-
-<div class="tooltip">Instructions 
-  <span class="tooltiptext"> 
-  <ol>
-    <li>Based on your descriptions, a reader will try to “reconstruct” the situation. We use the word “reconstruct” loosely here, because <b> the only thing that matters is the different types of objects that the sheet contains</b>. Therefore, please do <b> not </b> say <i>where</i> in the grid a particular object is located (e.g., ”top left”, “in the middle”, “on the diagonal”);</li>
-      <p></p>
-    <li>Each object is a circle or a square, and either red or blue. Your reader knows this; </li>
-      <p></p>
-    <li>Please do <b>not “enumerate” </b>the different types of objects. For example, do not say “There is a red circle, two blue circles, and ...”;</li>
-      <p></p>
-    <li>Every situation contains nine objects. Your reader knows this in advance, and he/she will take this information into account when interpreting your description;</li>
-      <p></p>
-    <li>Please describe each situation separately, without referring to other situations.</li>
-  </ol>
-  
-  </span>
+<div class="toggle">
+  <button class="toggle__trigger" data-textActive="Show text!" data-textNotActive="Hide!" type="button">Show text!</button>
+  <div class="toggle__target">
+    <ol>
+      <li>Based on your descriptions, a reader will try to “reconstruct” the situation. We use the word “reconstruct” loosely here, because <b> the only thing that matters is the different types of objects that the sheet contains</b>. Therefore, please do <b> not </b> say <i>where</i> in the grid a particular object is located (e.g., ”top left”, “in the middle”, “on the diagonal”);</li>
+        <p></p>
+      <li>Each object is a circle or a square, and either red or blue. Your reader knows this; </li>
+        <p></p>
+      <li>Please do <b>not “enumerate” </b>the different types of objects. For example, do not say “There is a red circle, two blue circles, and ...”;</li>
+        <p></p>
+      <li>Every situation contains nine objects. Your reader knows this in advance, and he/she will take this information into account when interpreting your description;</li>
+        <p></p>
+      <li>Please describe each situation separately, without referring to other situations.</li>
+    </ol>
+  </div>
 </div>
 
-
-    <p>Please write your description of this situation here:</p>
-    <textarea class="answerBox obligatory" name="ANSWER" rows="5"></textarea>
+<p>Please write your description of this situation here:</p>
+<textarea class="answerBox obligatory" name="ANSWER" rows="5"></textarea>
