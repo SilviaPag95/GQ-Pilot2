@@ -114,3 +114,7 @@ button {
     overflow: hidden;
     transition: height ease 0.3s
 }
+
+.example {
+    max-width: 900px;
+}
