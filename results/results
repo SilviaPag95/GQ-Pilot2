@@ -1,0 +1,196 @@
+#
+# Results on Tuesday January 22 2019 13:29:18 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/71.0.3578.98 Chrome/71.0.3578.98 Safari/537.36
+# Design number was non-random = 0
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1548163759,037e54b866b87864503765f749a77e68,Form,1,0,intro,NULL,name,Alex Olieman
+1548163759,037e54b866b87864503765f749a77e68,Form,1,0,intro,NULL,age,30
+1548163759,037e54b866b87864503765f749a77e68,Form,1,0,intro,NULL,consent,yes
+1548163759,037e54b866b87864503765f749a77e68,Form,1,0,intro,NULL,sex,male
+1548163759,037e54b866b87864503765f749a77e68,Form,1,0,intro,NULL,english,high
+1548163759,037e54b866b87864503765f749a77e68,FormBIS,5,0,question3,NULL,ANSWER,A blue circle is positioned at the bottom-left of a blue square%2C separated by horizontal space that is as wide as the square.%0ASome distance to the bottom and right of this duo%2C there is another blue square with two blue circles on its left%2C and one on its right. Of the circles on the left%2C one is positioned higher than the square%2C and one is lower. The higher circle is placed more to the left than the lower one. The circle on the right is higher than the highest circle on the left.%0AFurther to the right from the rightmost circle%2C there is a red square at some distance to its top and right%2C and another red square to its bottom right. There is a blue circle vertically in between the two red squares%2C but shifted to the right.
+1548163759,037e54b866b87864503765f749a77e68,FormBIS,8,0,question6,NULL,ANSWER,There is a red circle by itself. Far to its left%2C there is another red circle that is positioned slightly lower. There is a blue square on its bottom-left%2C and another blue square to its top and right.%0A%0AAt some distance to the right and bottom of the second red circle%2C there is a third red circle. About one diameter to its right%2C and two from its bottom%2C there is a blue square. One diameter to the right of the square%2C and one from its top%2C there is another blue square. Another diameter to the right%2C and one to the bottom from this square%2C there is another blue square. About another diameter down and to the right of the last square is the fourth red circle. The fourth red circle is positioned far lower and some distance to the left of the first red circle.
+1548163759,037e54b866b87864503765f749a77e68,FormBIS,4,0,question2,NULL,ANSWER,There is a blue circle with another blue circle on its right%2C separated by a vertical space. At some distance of the right side of the second blue circle%2C and slightly lower%2C there is a red square.%0A%0AAt some distance below this red square%2C and slightly to the right%2C is another red square with a red circle positioned at a small distance from its top-right corner. At some distance from the top-right of the red circle is a blue circle with a blue square positioned at a small distance from its bottom-right.%0A%0AAt some distance from the right and top of this duo is another blue circle. On its top-right%2C with some vertical space in between is a second red circle.
+1548163759,037e54b866b87864503765f749a77e68,FormBIS,10,0,question8,NULL,ANSWER,Roughly two square sizes to the bottom and three to the right of a red square%2C is a blue square. At some distance below this blue square%2C on its left side%2C is another red square. At some distance to the right of this red square%2C but slightly lower is a third red square. At a slightly larger distance on the left%2C and a bit to the top of the second red square%2C there is a fourth red square. At about the same distance and orientation from the fourth square%2C there is a fifth red square. Squares two to five roughly fall on the same line.%0A%0AAt some distance below the fifth red square%2C there are two blue circles%2C one on its left and one to its right. Below and to the left of the leftmost circle is a sixth red square.
+1548163759,037e54b866b87864503765f749a77e68,FormBIS,6,0,question4,NULL,ANSWER,There is a blue circle at the bottom-left of a blue square%2C separated by a small horizontal space. At some distance to the bottom-right of the circle is a red circle%2C and continuing the line with some space in between%2C there are two red squares.%0A%0AAt some distance to the left of the blue circle%2C and positioned lower%2C there is a second blue square. There is a red square on its top-left%2C separated by some horizontal space. There is a third blue square on its bottom-left%2C at a further distance than the red square. On its bottom-right%2C there is a second red circle%2C with vertical separation. The second red circle is positioned lower than the third blue square and the first red circle.
+1548163759,037e54b866b87864503765f749a77e68,FormBIS,9,0,question7,NULL,ANSWER,A blue square is positioned higher than all the other objects. A second blue square is at some distance on its right. There are three red circles on the left of the first square. The first is further to the left than any other object. A bit to the right%2C and far to the bottom of it is the second circle. The third circle is some distance to the right of the second%2C and is the lowermost object.%0A%0AThe remaining four red circles are horizontally between the blue squares. They are all positioned lower than the second blue square. The leftmost circle of this group is the lowest%2C and the second is at some distance to its top and a small distance to its right. The third is at a small distance to its top-right. The final and rightmost circle is vertically between the first and second circles of this group%2C only slightly to the left of the second blue square.
+1548163759,037e54b866b87864503765f749a77e68,FormBIS,3,0,question1,NULL,ANSWER,The leftmost object is a red circle. Three blue circles are positioned higher and to its right. All other objects are positioned lower. The second blue circle from the left is the uppermost object. The third blue circle is the rightmost object.%0A%0AThe second object from the left is another red circle. This is the lowermost object. To its right%2C at some vertical distance%2C is a blue square. Continuing to the right is a red square. Lower and to the right of the red square is a third red circle. Vertically between the third red circle and the red square%2C at some distance to their right%2C is a second blue square.
+1548163759,037e54b866b87864503765f749a77e68,FormBIS,7,0,question5,NULL,ANSWER,The left- and lowermost object is a red square. To its right is a blue square%2C which is the third-highest. To its right is a red square%2C which is the fifth highest. To its right is a blue circle%2C which is the fourth lowest. To its right is a red circle%2C which is the second lowest. To its right is a blue square%2C which is the second highest. To its right is a blue circle%2C which is the third lowest. To its right is a red circle%2C which is the uppermost object. To its right is another red circle%2C which is the fourth highest.
+#
+# Results on Tuesday January 22 2019 16:36:17 UTC.
+# USER AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+# Design number was non-random = 1
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1548174978,dc30c429a889e3a980b19ea7260384a6,Form,1,0,intro,NULL,name,Inessa Li
+1548174978,dc30c429a889e3a980b19ea7260384a6,Form,1,0,intro,NULL,age,29
+1548174978,dc30c429a889e3a980b19ea7260384a6,Form,1,0,intro,NULL,consent,yes
+1548174978,dc30c429a889e3a980b19ea7260384a6,Form,1,0,intro,NULL,sex,female
+1548174978,dc30c429a889e3a980b19ea7260384a6,Form,1,0,intro,NULL,english,high
+1548174978,dc30c429a889e3a980b19ea7260384a6,FormBIS,10,0,question8,NULL,ANSWER,There are no red circles.%0AThere are less blue squares than blue circles.%0AOne third of objects is blue.%0A
+1548174978,dc30c429a889e3a980b19ea7260384a6,FormBIS,7,0,question5,NULL,ANSWER,Number of blue and red squares is the same. %0ANumber of blue squares and circles is the same. %0AThe number of red objects is an odd number and is greater than the number of blue objects.%0A
+1548174978,dc30c429a889e3a980b19ea7260384a6,FormBIS,4,0,question2,NULL,ANSWER,Number of red circles and number of red squares is the same.%0ANumber of red objects is less than number of blue objects.%0ANumber of red objects is equal to the number of blue circles.
+1548174978,dc30c429a889e3a980b19ea7260384a6,FormBIS,6,0,question4,NULL,ANSWER,Number of red squares and number of blue squares and total number of circles is the same.%0AThere are more red objects than blue ones.
+1548174978,dc30c429a889e3a980b19ea7260384a6,FormBIS,5,0,question3,NULL,ANSWER,There are more blue objects than red ones.%0AThere are no red circles. Number of red squares is even.%0ANumber of red squares and number of blue squares is the same.%0A
+1548174978,dc30c429a889e3a980b19ea7260384a6,FormBIS,9,0,question7,NULL,ANSWER,There are no red squares.%0AThere are no blue circles.%0ANumber of red objects is odd.%0ALess than one third of objects is blue.
+1548174978,dc30c429a889e3a980b19ea7260384a6,FormBIS,3,0,question1,NULL,ANSWER,Number of red circles and number of blue circles is the same.%0AThere are more blue circles than blue squares.%0AThere are more blue objects than red objects.
+1548174978,dc30c429a889e3a980b19ea7260384a6,FormBIS,8,0,question6,NULL,ANSWER,All blue objects are squares.%0AAll red objects are circles.%0AThere are more blue objects than red ones.
+#
+# Results on Thursday January 24 2019 12:14:23 UTC.
+# USER AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15
+# Design number was non-random = 2
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1548332064,415d4c2c6bb1413c2b4a0b884cfe05a7,Form,1,0,intro,NULL,name,Jasper
+1548332064,415d4c2c6bb1413c2b4a0b884cfe05a7,Form,1,0,intro,NULL,age,25
+1548332064,415d4c2c6bb1413c2b4a0b884cfe05a7,Form,1,0,intro,NULL,consent,yes
+1548332064,415d4c2c6bb1413c2b4a0b884cfe05a7,Form,1,0,intro,NULL,sex,male
+1548332064,415d4c2c6bb1413c2b4a0b884cfe05a7,Form,1,0,intro,NULL,english,moderate
+1548332064,415d4c2c6bb1413c2b4a0b884cfe05a7,FormBIS,8,0,question6,NULL,ANSWER,There are red circles and blue squares. 
+1548332064,415d4c2c6bb1413c2b4a0b884cfe05a7,FormBIS,4,0,question2,NULL,ANSWER,There is a blue square%2C there are more blue circles. There are an even amount of red squares and circles.
+1548332064,415d4c2c6bb1413c2b4a0b884cfe05a7,FormBIS,10,0,question8,NULL,ANSWER,There is an un-even amount of blue and red figures 
+1548332064,415d4c2c6bb1413c2b4a0b884cfe05a7,FormBIS,7,0,question5,NULL,ANSWER,There are red circles%2C blue cirles and red squares and blue squares 
+1548332064,415d4c2c6bb1413c2b4a0b884cfe05a7,FormBIS,9,0,question7,NULL,ANSWER,there are more red circles%2C then blue squares 
+1548332064,415d4c2c6bb1413c2b4a0b884cfe05a7,FormBIS,6,0,question4,NULL,ANSWER,All squares are cornered left%2C all circles are in the middle or right. 
+1548332064,415d4c2c6bb1413c2b4a0b884cfe05a7,FormBIS,3,0,question1,NULL,ANSWER,the blue squares and colored circles are centered around the red square. 
+1548332064,415d4c2c6bb1413c2b4a0b884cfe05a7,FormBIS,5,0,question3,NULL,ANSWER,There are nine different objects. 
+#
+# Results on Thursday January 24 2019 14:37:03 UTC.
+# USER AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0.3 Safari/604.5.6
+# Design number was non-random = 3
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1548340624,0159bd1fe6080d766847d100b71e4b35,Form,1,0,intro,NULL,name,Kees van Deemter
+1548340624,0159bd1fe6080d766847d100b71e4b35,Form,1,0,intro,NULL,age,62
+1548340624,0159bd1fe6080d766847d100b71e4b35,Form,1,0,intro,NULL,consent,yes
+1548340624,0159bd1fe6080d766847d100b71e4b35,Form,1,0,intro,NULL,sex,male
+1548340624,0159bd1fe6080d766847d100b71e4b35,Form,1,0,intro,NULL,english,high
+1548340624,0159bd1fe6080d766847d100b71e4b35,FormBIS,9,0,question7,NULL,ANSWER,Two blue squares and lots of red circles.
+1548340624,0159bd1fe6080d766847d100b71e4b35,FormBIS,5,0,question3,NULL,ANSWER,Two red squares and 7 blue shapes. With two exceptions%2C the latter are mostly circles.
+1548340624,0159bd1fe6080d766847d100b71e4b35,FormBIS,3,0,question1,NULL,ANSWER,Six circles%2C half of which are blue. Three squares%2C two of which are blue.
+1548340624,0159bd1fe6080d766847d100b71e4b35,FormBIS,7,0,question5,NULL,ANSWER,How precise do you want me to be? I see 5 circles and four squares. The latter are evenly balanced between the two colours%2C but among the former%2C 3 of the 5 are red and 2 are blue.
+1548340624,0159bd1fe6080d766847d100b71e4b35,FormBIS,4,0,question2,NULL,ANSWER,The 6 circles have 4 blue ones and 2 red ones. The 3 squares have 2 red ones and 1 blue. 
+1548340624,0159bd1fe6080d766847d100b71e4b35,FormBIS,10,0,question8,NULL,ANSWER,6 red squares and 3 blue shapes%2C 2 of which are circles. 
+1548340624,0159bd1fe6080d766847d100b71e4b35,FormBIS,8,0,question6,NULL,ANSWER,5 blue squares%2C 4 red circles.
+1548340624,0159bd1fe6080d766847d100b71e4b35,FormBIS,6,0,question4,NULL,ANSWER,6 squares%2C equally split between the two colours. 3 circles%2C 2 of which are red.
+#
+# Results on Friday February 01 2019 18:41:37 UTC.
+# USER AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36
+# Design number was non-random = 4
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1549046497,0afb9bc5382802caa7afa9d9c12057c9,Form,1,0,intro,NULL,name,Esmee
+1549046497,0afb9bc5382802caa7afa9d9c12057c9,Form,1,0,intro,NULL,age,26
+1549046497,0afb9bc5382802caa7afa9d9c12057c9,Form,1,0,intro,NULL,consent,yes
+1549046497,0afb9bc5382802caa7afa9d9c12057c9,Form,1,0,intro,NULL,sex,female
+1549046497,0afb9bc5382802caa7afa9d9c12057c9,Form,1,0,intro,NULL,english,moderate
+1549046497,0afb9bc5382802caa7afa9d9c12057c9,FormBIS,10,0,question8,NULL,ANSWER,There are double the amount of red objects in comparison to the blue figures. All red objects are squares. Only one%2C one third of the blue objects%2C is a square.  
+1549046497,0afb9bc5382802caa7afa9d9c12057c9,FormBIS,6,0,question4,NULL,ANSWER,There are double the amount of squares in comparison to the circles. There are as many blue ones as red squares. There are double amount of red circles in comparison to the blue circle
+1549046497,0afb9bc5382802caa7afa9d9c12057c9,FormBIS,8,0,question6,NULL,ANSWER,All squares are blue. All circles are red. There is one more square than there are circles
+1549046497,0afb9bc5382802caa7afa9d9c12057c9,FormBIS,7,0,question5,NULL,ANSWER,All sorts come in pairs. Except for the red circles.
+1549046497,0afb9bc5382802caa7afa9d9c12057c9,FormBIS,3,0,question1,NULL,ANSWER,There is only one red square. There are double the amount of blue squares. The remaining circles are equally divided. 
+1549046497,0afb9bc5382802caa7afa9d9c12057c9,FormBIS,4,0,question2,NULL,ANSWER,There is one blue square and double the amount of red squares. There is half the amount of red circles in comparison to the blue circles. 
+1549046497,0afb9bc5382802caa7afa9d9c12057c9,FormBIS,5,0,question3,NULL,ANSWER,For every finger there is a blue dot. The amount of squares are equally divided. 
+1549046497,0afb9bc5382802caa7afa9d9c12057c9,FormBIS,9,0,question7,NULL,ANSWER,All is red circle but the two edged blues
+#
+# Results on Sunday February 03 2019 19:23:33 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36
+# Design number was non-random = 5
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1549221813,63a7ae94d8a640752a81cdecd817b32d,Form,1,0,intro,NULL,name,Jesse
+1549221813,63a7ae94d8a640752a81cdecd817b32d,Form,1,0,intro,NULL,age,23
+1549221813,63a7ae94d8a640752a81cdecd817b32d,Form,1,0,intro,NULL,consent,yes
+1549221813,63a7ae94d8a640752a81cdecd817b32d,Form,1,0,intro,NULL,sex,male
+1549221813,63a7ae94d8a640752a81cdecd817b32d,Form,1,0,intro,NULL,english,high
+1549221813,63a7ae94d8a640752a81cdecd817b32d,FormBIS,8,0,question6,NULL,ANSWER,There are five blue squares and four red circels%2C evenly spread around
+1549221813,63a7ae94d8a640752a81cdecd817b32d,FormBIS,10,0,question8,NULL,ANSWER,Every cirkle is blue and almost every square is red except for one%2C which is blue.
+1549221813,63a7ae94d8a640752a81cdecd817b32d,FormBIS,9,0,question7,NULL,ANSWER,There are more red circels on they field%2C then there are blue squares.
+1549221813,63a7ae94d8a640752a81cdecd817b32d,FormBIS,5,0,question3,NULL,ANSWER,Almost every square and circle is blue%2C except for two squares%2C which are red.
+1549221813,63a7ae94d8a640752a81cdecd817b32d,FormBIS,3,0,question1,NULL,ANSWER,The blue and red figures are almost even%2C except there is one blue square more then there is red.
+1549221813,63a7ae94d8a640752a81cdecd817b32d,FormBIS,4,0,question2,NULL,ANSWER,The red squares and squares are the same amount%2C but there is only one blue square and a lot of blue circles
+1549221813,63a7ae94d8a640752a81cdecd817b32d,FormBIS,7,0,question5,NULL,ANSWER,The figures and colors are evenly spread around%2C but there is one red circle extra
+1549221813,63a7ae94d8a640752a81cdecd817b32d,FormBIS,6,0,question4,NULL,ANSWER,There are way more squares%2C then there are circles.
+#
+# Results on Wednesday February 06 2019 14:04:28 UTC.
+# USER AGENT: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36
+# Design number was non-random = 6
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1549461868,7e61c47ba7711c5c07e6f598679478d0,Form,1,0,intro,NULL,name,Tom 
+1549461868,7e61c47ba7711c5c07e6f598679478d0,Form,1,0,intro,NULL,age,23
+1549461868,7e61c47ba7711c5c07e6f598679478d0,Form,1,0,intro,NULL,consent,yes
+1549461868,7e61c47ba7711c5c07e6f598679478d0,Form,1,0,intro,NULL,sex,male
+1549461868,7e61c47ba7711c5c07e6f598679478d0,Form,1,0,intro,NULL,english,high
+1549461868,7e61c47ba7711c5c07e6f598679478d0,FormBIS,3,0,question1,NULL,ANSWER,The circles come in pairs and are both red and blue. The squares are on the own%2C more spaced out and tend to be blue.
+1549461868,7e61c47ba7711c5c07e6f598679478d0,FormBIS,10,0,question8,NULL,ANSWER,There are lots of squares that are predominantly red. The rare circles found are blue.
+1549461868,7e61c47ba7711c5c07e6f598679478d0,FormBIS,6,0,question4,NULL,ANSWER,There are lots of squares of both red and blue colour. There are less circles but again%2C of both colours.
+1549461868,7e61c47ba7711c5c07e6f598679478d0,FormBIS,5,0,question3,NULL,ANSWER,There is a good mix of squares and circles here. The circles are blue and the squares are mixed.
+1549461868,7e61c47ba7711c5c07e6f598679478d0,FormBIS,7,0,question5,NULL,ANSWER,There is a fair distribution of circles and squares. There is also a fair distribution between red and blue. 
+1549461868,7e61c47ba7711c5c07e6f598679478d0,FormBIS,4,0,question2,NULL,ANSWER,There are lots of circles here%2C predominantly blue. The few squares tend to be red.
+1549461868,7e61c47ba7711c5c07e6f598679478d0,FormBIS,9,0,question7,NULL,ANSWER,There are lots of red circles. The rare square you see is blue.
+1549461868,7e61c47ba7711c5c07e6f598679478d0,FormBIS,8,0,question6,NULL,ANSWER,There is a fair distribution of squares and circles. The circles are red and the squares are blue.

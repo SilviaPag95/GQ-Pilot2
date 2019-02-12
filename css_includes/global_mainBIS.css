@@ -1,0 +1,105 @@
+body {
+    color: black;
+    background-color: white;
+    margin-left: 0;
+    margin-top: 5em;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.lindent { margin-left: 5em; }
+.sending-results {
+    font-weight: bold;
+    font-size: medium;
+}
+div.bar-container {
+    border: 1px solid;
+    border-color: #9ea4b1;
+    background-color: white;
+    margin: auto;
+
+}
+div.bar {
+    background-color: #449d44;
+}
+p.progress-text {
+    padding-top: 0.5em;
+    margin-top: 0;
+    margin-bottom: 2em;
+    font-style: italic;
+    font-size: small;
+}
+p.practice-box {
+    color: blue;
+    height: 1.5em;
+    padding-bottom: 1em;
+    font-size: small;
+    text-align: center;
+}
+span.retry {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+span.retry:hover {
+    text-decoration: underline;
+}
+span.retry:visited {
+    color: blue;
+}
+
+button {
+    padding: 3px 12px;
+    background: #2860c8;
+    color: white;
+    font-weight: bold;
+    margin: 15px auto;
+    border: none;
+    border-radius: 7px;
+    display: block;
+    cursor: pointer;
+}
+
+.answerBox {
+    font-family: Verdana, Geneva, sans-serif;
+    border-radius: 7px;
+    padding: 10px;
+    width: 100%;
+}
+
+.Message-personalMessage {
+    color: white;
+    text-decoration: none;
+}
+
+.help {
+    display:  inline-block;
+    position: relative;
+}
+
+.info-box {
+    width:    150px;
+    position: absolute;
+    right:    -170px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 800px;
+  background-color: white;
+  color: #000000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

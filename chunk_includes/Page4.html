@@ -1,0 +1,147 @@
+    <style>
+        .main {
+          width: 900px;
+          height: 500px;
+          border-radius: 7px;
+          border: 1px solid #ababab;
+          position: relative;
+          margin-bottom: 30px;
+        }
+
+        .shape {
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px 0px;
+        }
+
+        .circle {
+            border-radius: 100%;
+        }
+
+        .square {
+            display: block;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            var safe = false;
+            var count = 0;
+
+            while(!safe && count < 5) {
+              var desiredOutput = {
+                bs: 3,
+                rs: 3,
+                bc: 1,
+                rc: 2,
+              }
+              var trial = desiredOutput;
+              var objects = generate(trial);
+              if(objects.length === 9) {
+                safe = true;
+              }
+              count++;
+            }
+
+            for(var j = 0; j < objects.length; j++) {
+              $(".main").append("<div class='shape " + objects[j].currentshape + "' style='left: " + objects[j].left + "px; top: " + objects[j].top +"px; background-color: rgb(" + objects[j].red + "," + objects[j].green + "," + objects[j].blue + ")'></div>");
+              }
+            });
+
+            function generate(trial) {
+              var shape = ["circle", "square"];
+              var objects = [];
+              var object = {};
+              var counter = 0;
+
+              while(objects.length < 9 && counter < 10000) {
+                var left = Math.random() * ($('.main').width() - 40);
+                var top = Math.random() * ($('.main').height() - 40);
+                var overlapping = false;
+
+                for(var i = 0; i < objects.length; i++) {
+                  var existing = objects[i];
+                  var x = Math.round(Math.abs(left - existing.left));
+                  var y = Math.round(Math.abs(top - existing.top));
+                  if (x < 40 || y < 40) {
+                    // They are overlapping
+                    overlapping = true;
+                    // do not add to array
+                    break;
+                  }
+
+                }
+                // add valid circles to array
+                if (!overlapping) {
+                  if(trial.bs != 0 || trial.rs != 0) {
+                    var currentshape = "square";
+                    if(trial.bs != 0) {
+                      var red = 40;
+                      var blue = 200;
+                      var green = 96;
+                      trial.bs--;
+                    }
+                    else{
+                      var red = 230;
+                      var blue = 44;
+                      var green = 48;
+                      trial.rs--;
+                    }
+                  }
+                  else {
+                    var currentshape = "circle";
+                    if(trial.bc != 0) {
+                      var red = 40;
+                      var blue = 200;
+                      var green = 96;
+                      trial.bc--;
+                    }
+                    else {
+                      var red = 230;
+                      var blue = 44;
+                      var green = 48;
+                      trial.rc--;
+                    }
+                  }
+
+                  object = {
+                    left: left,
+                    top: top,
+                    currentshape: currentshape,
+                    red: red,
+                    blue: blue,
+                    green: green,
+                  }
+
+
+                  objects.push(object);
+                }
+                  counter++;
+                }
+              return objects;
+            }
+    </script>
+
+    <div class="main"></div>
+
+<div class="tooltip">Instructions 
+  <span class="tooltiptext"> 
+  <ol>
+    <li>Based on your descriptions, a reader will try to “reconstruct” the situation. We use the word “reconstruct” loosely here, because <b> the only thing that matters is the different types of objects that the sheet contains</b>. Therefore, please do <b> not </b> say <i>where</i> in the grid a particular object is located (e.g., ”top left”, “in the middle”, “on the diagonal”);</li>
+      <p></p>
+    <li>Each object is a circle or a square, and either red or blue. Your reader knows this; </li>
+      <p></p>
+    <li>Please do <b>not “enumerate” </b>the different types of objects. For example, do not say “There is a red circle, two blue circles, and ...”;</li>
+      <p></p>
+    <li>Every situation contains nine objects. Your reader knows this in advance, and he/she will take this information into account when interpreting your description;</li>
+      <p></p>
+    <li>Please describe each situation separately, without referring to other situations.</li>
+  </ol>
+  
+  </span>
+</div>
+
+    
+    <p>Please write your description of this situation here:</p>
+    <textarea class="answerBox obligatory" name="ANSWER" rows="5"></textarea>
