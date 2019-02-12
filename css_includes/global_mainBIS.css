@@ -81,26 +81,36 @@ button {
     position: absolute;
     right:    -170px;
 }
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px solid black;
-  max-width: 900px;
-}
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 800px;
-  background-color: white;
-  color: #000000;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
 
-  /* Position the tooltip */
+.main {
+  width: 900px;
+  height: 500px;
+  border-radius: 7px;
+  border: 1px solid #ababab;
   position: relative;
-  z-index: 1;
+  margin-bottom: 30px;
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
+.shape {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px 0px;
+}
+
+.circle {
+    border-radius: 100%;
+}
+
+.square {
+    display: block;
+}
+
+.toggle {
+    max-width: 900px;
+}
+
+.toggle__target {
+    overflow: hidden;
+    transition: height ease 0.3s
 }
