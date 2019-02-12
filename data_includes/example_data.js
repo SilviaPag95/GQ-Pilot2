@@ -34,11 +34,11 @@ var items = [
         }
     ],
 
-    ["training1", "FormBIS", {
+    ["training1", "Form", {
       html: {include: "TrainingItem1.html"},
     } ],
 
-    ["training2", "FormBIS", {
+    ["training2", "Form", {
       html: {include: "TrainingItem2.html"},
     } ],
                 
