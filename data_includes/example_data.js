@@ -1,4 +1,4 @@
-var shuffleSequence = seq("intro", "instructions", "training1", "training2", sepWith("sep", rshuffle(startsWith("question"))));
+var shuffleSequence = seq("intro", "instructions", "training1", "training2", "1question", sepWith("sep", rshuffle(startsWith("question"))));
 var practiceItemTypes = ["practice"];
 
 var defaults = [
@@ -45,7 +45,7 @@ var items = [
       html: {include: "TrainingItem2.html"},
     } ],
                 
-    ["question1", "FormBIS", {
+    ["1question", "FormBIS", {
         html: { include: "Page1.html" },
     } ],
     
@@ -75,6 +75,13 @@ var items = [
 
     ["question8", "FormBIS", {
         html: { include: "Page8.html" },
-    } ]
-             
+    } ],
+
+    ["question9", "FormBIS", {
+        html: { include: "Page9.html" },
+    } ],
+
+    ["question10", "FormBIS", {
+        html: { include: "Page10.html" },
+    } ],
 ];
